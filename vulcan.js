@@ -2,7 +2,7 @@
     Vulcan (General JS Programming Utilities)
 
     File name: vulcan.js (Version: 2.6)
-    Description: This file contains the Vulcan extension.
+    Description: This file contains the Vulcan library.
 
     Coded by George Delaportas (G0D)
     Copyright (C) 2014 - 2024
