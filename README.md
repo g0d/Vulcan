@@ -5,7 +5,7 @@ Vulcan is very straightforward, organized in namesspaces that make sense and pro
 
 Vulcan is a core library and part of the [micro-MVC](https://github.com/g0d/micro-MVC) framework.
 
-For a minified version of the library, use this [link](https://cdn.jsdelivr.net/gh/g0d/Vulcan@main/vulcan.js).
+For a minified version of the library, use this [link](https://cdn.jsdelivr.net/gh/g0d/Vulcan@main/vulcan.min.js).
 
 
 
