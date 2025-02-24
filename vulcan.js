@@ -39,7 +39,7 @@ function vulcan()
                 if (!__self.is_string(val))
                     return false;
 
-                return (!val.trim())
+                return (!val.trim());
             };
         }
 
