@@ -494,7 +494,7 @@ function vulcan()
 
         this.contains = function(subject, list)
         {
-            return (list.indexOf(subject) === -1);
+            return (list.indexOf(subject) !== -1);
         };
 
         this.sort = function(array, mode, by_property)
