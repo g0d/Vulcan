@@ -39,10 +39,7 @@ function vulcan()
                 if (!__self.is_string(val))
                     return false;
 
-                if (!val.trim())
-                    return true;
-
-                return false;
+                return (!val.trim())
             };
         }
 
@@ -55,10 +52,7 @@ function vulcan()
                 if (self.validation.misc.is_array(val) && val.length === 0)
                     return false;
 
-                if (!isNaN(val - parseFloat(val)))
-                    return true;
-
-                return false;
+                return (!isNaN(val - parseFloat(val)))
             };
 
             this.is_integer = function(val)
