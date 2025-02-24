@@ -28,7 +28,10 @@ function vulcan()
                 if (!__self.is_string(val))
                     return false;
 
-                return val.match(/[!$%^&*()+\-|~=`{}\[\]:";'<>?,\/]/);
+                if (val.match(/[!$%^&*()+\-|~=`{}\[\]:";'<>?,\/]/))
+                    return true;
+
+                return false;
             };
 
             this.is_blank = function(val)
@@ -116,7 +119,7 @@ function vulcan()
         {
             this.is_email = function(val)
             {
-                var __pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                var __pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
                 return __pattern.test(String(val).toLowerCase());
             };
